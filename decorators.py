@@ -1,3 +1,17 @@
+def show_args_kwargs(*args, **kwargs):
+    print("Positional arguments (*args):")
+    for i, arg in enumerate(args, start=1):
+        print(f"  Argument {i}: {arg}")
+        
+    print("\nKeyword arguments (**kwargs):")
+    for key, value in kwargs.items():
+        print(f"  {key}: {value}")
+
+# Example usage:
+show_args_kwargs(1, 2, 3, name="Alice", age=30, location="Wonderland")
+
+
+
 # Step 1: Assigning a function to a variable
 def greet():
     return "Hello!"
